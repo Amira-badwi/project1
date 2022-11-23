@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    text-align: center;
+
+}
+
+body{
+    width: 100%;
+   height: 90%;
+   background-color: rgb(236, 234, 234);
+
+}  
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.content
+{ width: 80%;
+    background-image: url(resourse/ا-PhotoRoom.png);
+    background-size: 100%;
+    margin: 5% auto;
+    background-repeat: no-repeat;
+    height : 100%;
+    box-shadow: rgb(228, 175, 175) 0 0 99px;
+ 
+}
+ul:hover{
+    background-color: #1d0105;
+}
+li{
+    display: inline;
+    padding: 10px;
+    margin-right: 40px;
+
+
+}
+header a:hover {
+    background-color: #f8e9ec;
+    color: rgb(0, 8, 15);
+border: rgb(172, 45, 45) 1px solid;
+border-radius: 70%;
+
+display: inline-block;
+
+}
+#portifolo{
+    background-color: rgb(124, 170, 170);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 300px;
+}
+#about{
+    background-color: rgb(110, 119, 95);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 300px;
+   
+}
+#home span{
+    width: 35%;
+    height: 100%;
+   
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: unset;
+}
+#regisster{
+    width: 100%;
+    height: 100vh;
+}
+#login{
+   
+    height: 150vh;
+
+    
+}
+.anchor a{
+padding-left: 20px;
+}

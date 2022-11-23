@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regesteration</title>
+</head>
+<style>
+    input{
+        width: 300px;
+background-color: rgb(255, 255, 255);
+color: rgb(11, 83, 83);
+margin-top: 10px;
+outline:  0ch;
+border: none;
+height: 30px;
+
+}
+fieldset{
+    background-color: rgb(216, 205, 190);
+}
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+input:invalid {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+input:invalid + span::before {
+  content: "invald";
+  color: red;
+}
+
+input:valid + span::before {
+  content: "✓";
+  color: green;
+}
+</style>
+<body>
+    <fieldset  >
+        <label>regesteration</label>
+        
+        <form  method="get" action="wel.html"  style="margin: 5% 40% ; color: rgb(172, 59, 59); " >
+<br>
+<input type="hidden" id="id" maxlength="14"   >
+<label for="fname" >first name:</label><span style="color: red;">*</span><bR>
+<input type="text" required id="fname">  <span></span> <br><br>
+<label for="lname" >last name:</label> <span style="color: red;">*</span><br>
+<input type="text" required id="lname"> <span></span> <br><br>
+<label for="Email" >Email  : &nbsp;</label><span style="color: red;">*</span><br>
+<input type="email" required id="Email">  <span></span> <br><br>
+<label for="pass">password:</label>
+<input type="password" id="pass">
+<label for="pass2">repeat  password:</label>
+<input type="password" id="pass2">
+
+<label for="date">birth date:</label>
+<input type="date" id="date">
+<label for="pic">user pic:</label>
+<input type="file" id="pic">
+<label>male</label>
+<input style="width: 20px;" type="radio" name="six" value="male">
+<label>Famale</label>
+<input type="radio" style="width: 20px;" name="six" value="famale">
+<br> <br>
+<label for="sel">Faculty:</label>
+<select id="sel">
+    <option>computer &information </option>
+    <option>computer science </option>
+</select>
+<br> <br>
+
+<label>describe your self:</label>
+<textarea placeholder="describe your self"></textarea>
+<br> <br>
+<input type="checkbox" style="width: 14px;"> <a href="cond.html" >I agreed to terms and condition </a>
+<input type="reset">
+<input type="submit">
+</form>
+    </fieldset>
+</body>
+</html>
